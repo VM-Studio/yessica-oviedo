@@ -30,7 +30,7 @@ export default function Home() {
               </p>
               <Link
                 href="/contacto"
-                className="inline-block bg-black text-white px-6 py-2.5 text-sm hover:bg-gray-800 transition-colors font-medium"
+                className="inline-block bg-[#7c6043] text-white px-6 py-2.5 text-sm hover:bg-[#5d4630] transition-colors font-medium"
               >
                 Contáctame
               </Link>
@@ -327,7 +327,7 @@ export default function Home() {
           </h2>
           <Link
             href="/contacto"
-            className="inline-block bg-white text-black px-8 py-3 text-sm hover:bg-gray-100 transition-colors font-medium"
+            className="inline-block bg-[#7c6043] text-white px-8 py-3 text-sm hover:bg-[#5d4630] transition-colors font-medium"
           >
             Contáctame
           </Link>

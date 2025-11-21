@@ -15,7 +15,7 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-2.5">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center -ml-10 mr-12">
             <div className="relative w-48 h-14">
               <Image
                 src="/logonavbar.png"
@@ -25,7 +25,7 @@ export default function Header() {
                 priority
               />
             </div>
-            <div className="relative w-48 h-14">
+            <div className="relative w-48 h-14 -ml-10">
               <Image
                 src="/logonavbar2.png"
                 alt="Logo adicional"
@@ -37,28 +37,28 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
-            <Link href="/" className="text-[#1a1a1a] hover:text-[#8b7355] transition-colors font-medium text-sm uppercase tracking-wide">
+          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8 ml-auto pr-6">
+            <Link href="/" className="text-[#1a1a1a] hover:text-[#8b7355] transition-colors font-serif text-sm uppercase tracking-[0.15em]">
               INICIO
             </Link>
-            <Link href="/servicios" className="text-[#1a1a1a] hover:text-[#8b7355] transition-colors font-medium text-sm uppercase tracking-wide">
+            <Link href="/servicios" className="text-[#1a1a1a] hover:text-[#8b7355] transition-colors font-serif text-sm uppercase tracking-[0.15em]">
               SERVICIOS
             </Link>
-            <Link href="/sobre-mi" className="text-[#1a1a1a] hover:text-[#8b7355] transition-colors font-medium text-sm uppercase tracking-wide">
+            <Link href="/sobre-mi" className="text-[#1a1a1a] hover:text-[#8b7355] transition-colors font-serif text-sm uppercase tracking-[0.15em] whitespace-nowrap">
               SOBRE MÍ
             </Link>
-            <Link href="/blog" className="text-[#1a1a1a] hover:text-[#8b7355] transition-colors font-medium text-sm uppercase tracking-wide">
+            <Link href="/blog" className="text-[#1a1a1a] hover:text-[#8b7355] transition-colors font-serif text-sm uppercase tracking-[0.15em]">
               BLOG
             </Link>
-            <Link href="/destacados" className="text-[#1a1a1a] hover:text-[#8b7355] transition-colors font-medium text-sm uppercase tracking-wide">
+            <Link href="/destacados" className="text-[#1a1a1a] hover:text-[#8b7355] transition-colors font-serif text-sm uppercase tracking-[0.15em]">
               DESTACADOS
             </Link>
-            <Link href="/desarrollos" className="text-[#1a1a1a] hover:text-[#8b7355] transition-colors font-medium text-sm uppercase tracking-wide">
+            <Link href="/desarrollos" className="text-[#1a1a1a] hover:text-[#8b7355] transition-colors font-serif text-sm uppercase tracking-[0.15em]">
               DESARROLLOS
             </Link>
             <Link 
               href="/contacto" 
-              className="bg-[#1a1a1a] text-white px-6 py-2 hover:bg-[#8b7355] transition-colors font-medium text-sm uppercase tracking-wide"
+              className="bg-[#7c6043] text-white px-6 py-2 hover:bg-[#5d4630] transition-colors font-serif text-sm uppercase tracking-[0.15em]"
             >
               CONTÁCTAME
             </Link>
@@ -79,49 +79,49 @@ export default function Header() {
           <nav className="lg:hidden pb-4 space-y-3">
             <Link 
               href="/" 
-              className="block text-[#1a1a1a] hover:text-[#8b7355] transition-colors py-2 font-medium text-sm uppercase tracking-wide"
+              className="block text-[#1a1a1a] hover:text-[#8b7355] transition-colors py-2 font-serif text-sm uppercase tracking-[0.15em]"
               onClick={toggleMenu}
             >
               INICIO
             </Link>
             <Link 
               href="/servicios" 
-              className="block text-[#1a1a1a] hover:text-[#8b7355] transition-colors py-2 font-medium text-sm uppercase tracking-wide"
+              className="block text-[#1a1a1a] hover:text-[#8b7355] transition-colors py-2 font-serif text-sm uppercase tracking-[0.15em]"
               onClick={toggleMenu}
             >
               SERVICIOS
             </Link>
             <Link 
               href="/sobre-mi" 
-              className="block text-[#1a1a1a] hover:text-[#8b7355] transition-colors py-2 font-medium text-sm uppercase tracking-wide"
+              className="block text-[#1a1a1a] hover:text-[#8b7355] transition-colors py-2 font-serif text-sm uppercase tracking-[0.15em] whitespace-nowrap"
               onClick={toggleMenu}
             >
               SOBRE MÍ
             </Link>
             <Link 
               href="/blog" 
-              className="block text-[#1a1a1a] hover:text-[#8b7355] transition-colors py-2 font-medium text-sm uppercase tracking-wide"
+              className="block text-[#1a1a1a] hover:text-[#8b7355] transition-colors py-2 font-serif text-sm uppercase tracking-[0.15em]"
               onClick={toggleMenu}
             >
               BLOG
             </Link>
             <Link 
               href="/destacados" 
-              className="block text-[#1a1a1a] hover:text-[#8b7355] transition-colors py-2 font-medium text-sm uppercase tracking-wide"
+              className="block text-[#1a1a1a] hover:text-[#8b7355] transition-colors py-2 font-serif text-sm uppercase tracking-[0.15em]"
               onClick={toggleMenu}
             >
               DESTACADOS
             </Link>
             <Link 
               href="/desarrollos" 
-              className="block text-[#1a1a1a] hover:text-[#8b7355] transition-colors py-2 font-medium text-sm uppercase tracking-wide"
+              className="block text-[#1a1a1a] hover:text-[#8b7355] transition-colors py-2 font-serif text-sm uppercase tracking-[0.15em]"
               onClick={toggleMenu}
             >
               DESARROLLOS
             </Link>
             <Link 
               href="/contacto" 
-              className="block bg-[#1a1a1a] text-white px-6 py-2 hover:bg-[#8b7355] transition-colors text-center font-medium text-sm uppercase tracking-wide"
+              className="block bg-[#7c6043] text-white px-6 py-2 hover:bg-[#5d4630] transition-colors text-center font-serif text-sm uppercase tracking-[0.15em]"
               onClick={toggleMenu}
             >
               CONTÁCTAME
