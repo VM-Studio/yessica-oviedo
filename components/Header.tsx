@@ -11,17 +11,26 @@ export default function Header() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#e8ddd4] shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#eee9e1] shadow-sm">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between py-3">
+        <div className="flex items-center justify-between py-2.5">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <div className="relative w-56 h-16">
+            <div className="relative w-48 h-14">
               <Image
                 src="/logonavbar.png"
                 alt="Yesica Oviedo Real Estate"
                 fill
-                className="object-contain"
+                className="object-contain object-left"
+                priority
+              />
+            </div>
+            <div className="relative w-48 h-14">
+              <Image
+                src="/logonavbar2.png"
+                alt="Logo adicional"
+                fill
+                className="object-contain object-left"
                 priority
               />
             </div>

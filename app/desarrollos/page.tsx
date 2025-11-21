@@ -1,57 +1,130 @@
+import Image from 'next/image';
+import Link from 'next/link';
+
 export default function DesarrollosPage() {
   return (
-    <div className="pt-24 pb-20">
-      <div className="container mx-auto px-4">
-        <h1 className="text-4xl md:text-5xl font-bold mb-8 text-primary text-center">
-          Desarrollos
-        </h1>
-        <p className="text-xl text-gray-700 text-center mb-16">
-          Proyectos inmobiliarios en desarrollo y preventa en Florida
-        </p>
+    <div className="pt-24">
+      {/* Sección 1: Hero con imagen grande izquierda + info derecha */}
+      <section className="bg-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* Imagen grande del edificio */}
+            <div className="relative h-[450px] md:h-[550px]">
+              <Image
+                src="/desarrollo-casa-wyn.jpg"
+                alt="Casa WYN - Desarrollo inmobiliario"
+                fill
+                className="object-cover rounded-2xl"
+                priority
+              />
+            </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Placeholder for developments */}
-          {[1, 2, 3, 4].map((item) => (
-            <div key={item} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="h-80 bg-gray-200 flex items-center justify-center">
-                <p className="text-gray-500">Imagen del desarrollo {item}</p>
-              </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold mb-3 text-primary">
-                  Desarrollo {item}
-                </h3>
-                <p className="text-gray-700 mb-2">
-                  <strong>Ubicación:</strong> Miami, FL
-                </p>
-                <p className="text-gray-700 mb-2">
-                  <strong>Estado:</strong> En construcción
-                </p>
-                <p className="text-gray-700 mb-4">
-                  <strong>Entrega estimada:</strong> 2026
-                </p>
-                <p className="text-gray-700 mb-6">
-                  Exclusivo desarrollo con amenidades de lujo, ubicación privilegiada y las mejores vistas de la ciudad.
-                </p>
-                <button className="w-full bg-secondary text-white py-3 rounded hover:bg-accent transition-colors font-semibold">
-                  Más Información
-                </button>
+            {/* Info + 3 imágenes pequeñas */}
+            <div>
+              <h1 className="text-3xl md:text-4xl font-serif mb-4">
+                Bienvenidos a CASA WYN
+              </h1>
+              <p className="text-sm lg:text-base text-gray-700 mb-6">
+                Entrega: Principios 2027.
+              </p>
+              
+              <Link
+                href="/contacto"
+                className="inline-block border-2 border-black px-6 py-2.5 text-sm hover:bg-black hover:text-white transition-colors mb-8"
+              >
+                Contáctame
+              </Link>
+
+              {/* Grid de 3 imágenes pequeñas de amenidades */}
+              <div className="grid grid-cols-3 gap-3 mt-6">
+                <div className="relative h-[120px]">
+                  <Image
+                    src="/casa-wyn-amenidad-1.jpg"
+                    alt="Amenidades Casa WYN - Terraza"
+                    fill
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+                <div className="relative h-[120px]">
+                  <Image
+                    src="/casa-wyn-amenidad-2.jpg"
+                    alt="Amenidades Casa WYN - Gimnasio"
+                    fill
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+                <div className="relative h-[120px]">
+                  <Image
+                    src="/casa-wyn-amenidad-3.jpg"
+                    alt="Amenidades Casa WYN - Área social"
+                    fill
+                    className="object-cover rounded-lg"
+                  />
+                </div>
               </div>
             </div>
-          ))}
+          </div>
         </div>
+      </section>
 
-        <div className="text-center mt-12">
-          <p className="text-lg text-gray-700 mb-6">
-            ¿Interesado en invertir en desarrollos?
+      {/* Sección 2: Texto descriptivo */}
+      <section className="bg-[#e8ddd4] py-12">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-serif mb-5">
+            Un espacio para disfrutar con los demás
+          </h2>
+          <p className="text-sm lg:text-base text-gray-800 leading-relaxed">
+            Estudios, 1 habitación o 1 habitación + Den. Terraza con jardín y área de parrilla. Scooters eléctricos para residentes. Precios exclusivos de pre-construcción. ¡Tu hogar ideal, ahora más cerca!
           </p>
-          <a
-            href="/contacto"
-            className="bg-secondary text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-accent transition-colors inline-block"
-          >
-            Solicita una Consulta
-          </a>
         </div>
-      </div>
+      </section>
+
+      {/* Sección 3: Grid de 4 imágenes grandes */}
+      <section className="bg-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-5">
+            {/* Imagen 1 - Vista nocturna edificio */}
+            <div className="relative h-[300px] md:h-[400px]">
+              <Image
+                src="/casa-wyn-detalle-1.jpg"
+                alt="Casa WYN - Vista nocturna"
+                fill
+                className="object-cover rounded-2xl"
+              />
+            </div>
+
+            {/* Imagen 2 - Dormitorio */}
+            <div className="relative h-[300px] md:h-[400px]">
+              <Image
+                src="/casa-wyn-detalle-2.jpg"
+                alt="Casa WYN - Dormitorio moderno"
+                fill
+                className="object-cover rounded-2xl"
+              />
+            </div>
+
+            {/* Imagen 3 - Cocina */}
+            <div className="relative h-[300px] md:h-[400px]">
+              <Image
+                src="/casa-wyn-detalle-3.jpg"
+                alt="Casa WYN - Cocina equipada"
+                fill
+                className="object-cover rounded-2xl"
+              />
+            </div>
+
+            {/* Imagen 4 - Terraza rooftop */}
+            <div className="relative h-[300px] md:h-[400px]">
+              <Image
+                src="/casa-wyn-detalle-4.jpg"
+                alt="Casa WYN - Terraza rooftop"
+                fill
+                className="object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-  )
+  );
 }

@@ -80,16 +80,92 @@ Todas las imágenes deben colocarse en la carpeta `/public` en la raíz del proy
 
 ### 5. Newsletter
 
-#### `newsletter-image.jpg`
-- **Ubicación**: `/public/newsletter-image.jpg`
-- **Uso**: Imagen de la sección de newsletter/guía gratuita
-- **Dimensiones recomendadas**: 800x1000px
+#### `newsletter-bg.jpg`
+- **Ubicación**: `/public/newsletter-bg.jpg`
+- **Uso**: Background de la sección de newsletter/guía gratuita
+- **Dimensiones recomendadas**: 1920x800px
 - **Formato**: JPG
-- **Descripción**: Imagen relacionada con el eBook o guía de ventas
+- **Descripción**: Imagen de fondo para formulario de newsletter
 
 ---
 
-### 6. Zonas Destacadas
+### 6. Página de Servicios
+
+#### `servicios-hero.jpg`
+- **Ubicación**: `/public/servicios-hero.jpg`
+- **Uso**: Imagen principal hero de la página servicios
+- **Dimensiones recomendadas**: 800x1000px
+- **Formato**: JPG
+- **Descripción**: Foto de Yesica sentada en cocina con vestido blanco (lado izquierdo)
+
+#### `otros-servicios-bg.jpg`
+- **Ubicación**: `/public/otros-servicios-bg.jpg`
+- **Uso**: Background de la sección "Otros servicios" en página servicios
+- **Dimensiones recomendadas**: 1920x800px
+- **Formato**: JPG
+- **Descripción**: Interior elegante de propiedad para fondo de cards
+
+#### `section5-bg.jpg`
+- **Ubicación**: `/public/section5-bg.jpg`
+- **Uso**: Background de "Llevemos al éxito tus inversiones" (Home y Servicios)
+- **Dimensiones recomendadas**: 1920x1080px
+- **Formato**: JPG
+- **Descripción**: Foto de Yesica con revista en cocina oscura
+
+---
+
+### 7. Página de Destacados
+
+#### `destacado-rotonda-1.jpg`
+- **Ubicación**: `/public/destacado-rotonda-1.jpg`
+- **Uso**: Primera imagen de la propiedad destacada Rotonda (vista frontal)
+- **Dimensiones recomendadas**: 800x1000px
+- **Formato**: JPG
+- **Descripción**: Casa moderna en Rotonda - vista frontal con auto
+
+#### `destacado-rotonda-2.jpg`
+- **Ubicación**: `/public/destacado-rotonda-2.jpg`
+- **Uso**: Segunda imagen de la propiedad destacada Rotonda (vista trasera)
+- **Dimensiones recomendadas**: 800x1000px
+- **Formato**: JPG
+- **Descripción**: Casa moderna en Rotonda - vista trasera con patio
+
+#### `plano-rotonda.jpg`
+- **Ubicación**: `/public/plano-rotonda.jpg`
+- **Uso**: Plano arquitectónico de la propiedad Rotonda
+- **Dimensiones recomendadas**: 1000x1200px
+- **Formato**: JPG
+- **Descripción**: Floor plan con 3 dormitorios y 3 baños
+
+---
+
+### 8. Página de Desarrollos (Casa WYN)
+
+#### `desarrollo-casa-wyn.jpg`
+- **Ubicación**: `/public/desarrollo-casa-wyn.jpg`
+- **Uso**: Imagen hero principal del desarrollo Casa WYN (edificio nocturno)
+- **Dimensiones recomendadas**: 800x1200px
+- **Formato**: JPG
+- **Descripción**: Vista nocturna del edificio Casa WYN con cielo estrellado
+
+#### Amenidades (3 imágenes pequeñas)
+- **`casa-wyn-amenidad-1.jpg`**: Terraza/área social exterior con luces
+- **`casa-wyn-amenidad-2.jpg`**: Gimnasio o área común
+- **`casa-wyn-amenidad-3.jpg`**: Otra área común o amenidad
+- **Dimensiones recomendadas**: 400x400px cada una
+- **Formato**: JPG
+
+#### Detalles (4 imágenes grandes en grid)
+- **`casa-wyn-detalle-1.jpg`**: Vista nocturna lateral del edificio
+- **`casa-wyn-detalle-2.jpg`**: Interior dormitorio moderno
+- **`casa-wyn-detalle-3.jpg`**: Cocina equipada
+- **`casa-wyn-detalle-4.jpg`**: Terraza rooftop con vista
+- **Dimensiones recomendadas**: 1000x800px cada una
+- **Formato**: JPG
+
+---
+
+### 9. Zonas Destacadas
 
 #### `condado-miami-dade.jpg`
 - **Ubicación**: `/public/condado-miami-dade.jpg`
@@ -199,6 +275,25 @@ Actualmente el sitio está configurado para usar estas rutas. Si no tienes algun
 - [ ] maximizamos-image.jpg
 - [ ] exito-inversiones-bg.jpg
 
+**Servicios Page:**
+- [ ] servicios-hero.jpg
+- [ ] otros-servicios-bg.jpg
+
+**Destacados Page:**
+- [ ] destacado-rotonda-1.jpg
+- [ ] destacado-rotonda-2.jpg
+- [ ] plano-rotonda.jpg
+
+**Desarrollos Page:**
+- [ ] desarrollo-casa-wyn.jpg
+- [ ] casa-wyn-amenidad-1.jpg
+- [ ] casa-wyn-amenidad-2.jpg
+- [ ] casa-wyn-amenidad-3.jpg
+- [ ] casa-wyn-detalle-1.jpg
+- [ ] casa-wyn-detalle-2.jpg
+- [ ] casa-wyn-detalle-3.jpg
+- [ ] casa-wyn-detalle-4.jpg
+
 **Zonas:**
 - [ ] condado-miami-dade.jpg
 - [ ] condado-broward.jpg
@@ -206,6 +301,10 @@ Actualmente el sitio está configurado para usar estas rutas. Si no tienes algun
 
 **Otras páginas:**
 - [ ] about-image.jpg
+
+**Shared Sections:**
+- [ ] section5-bg.jpg (usado en home y servicios)
+- [ ] newsletter-bg.jpg (usado en home y servicios)
 
 **Footer:**
 - [ ] profile-footer.jpg
