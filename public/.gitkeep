@@ -1,0 +1,6 @@
+# This file is used to mark the public directory
+# Place all your images here as specified in IMAGES-GUIDE.md
+
+node_modules/
+.next/
+.DS_Store
